@@ -3,40 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurant | Pizzeria Nennillo Bonn</title>
+    <title>Restaurant | Pizzeria Nennillo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cardo:ital,wght@0,400;0,700;1,400&family=Forum&family=Great+Vibes&family=Lexend+Peta:wght@100..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <header class="header">
-      <nav>
-        <div class="navbar">
-          <a href="#firstSec" class="menu">ÜBER UNS </a>
-          <a href="#secondSec" class="menu">ÖFFNUNGSZEITEN</a>
-          <a href="#thirdSec" class="menu">SPEISEKARTE</a>
-          <a href="#forthSec" class="menu">LOCATIONS</a>
-        </div>
-      </nav>
+    <div class="header">
+      <div class="navbar">
+        <a href="#about">Über uns</a>
+        <a href="#table">Öffnungszeiten</a>
+        <a href="/pdf/Speisekarte.pdf" target="_blank">Speisekarte</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
       <div class="videoContainer">
         <video autoplay loop muted src="/video/backgroundvid.mp4"></video>
       </div>
       <div class="textOverlay">
-        <h1>Pizzeria Nennillo Bonn</h1>
+        <h1>Pizzeria<br />Nennillo Bonn</h1>
         <h4>Pizza Napoletana • Wein • Altstadt</h4>
       </div>
-    </header>
     <main>
-      <section class="filler">Hier könnte ein Übergang hin</section>
-      <section class="firstSec" id="firstSec">
+      <div class="secOne">
         <div class="about" id="about">
-          <p>
-            <span class="nennillo">Nennillo Bonn</span><br /><br />
-            <i
+          <h2>Nennillo Bonn</h2><br />
+            <p><i
               >„Das Backen einer original neapolitanischen Pizza dauert ca. 60
               Sekunden“</i
             >, sagt James Amatulli, Inhaber der Antica Pizzeria Nennillo. In der
@@ -52,66 +47,74 @@
             original neapolitanischen Pizza.<br /><br />
             Die lange Teigführung von 72 Stunden macht sie nicht nur besonders
             bekömmlich sondern verleiht dem Teig ein einzigartiges Aroma. Kommt
-            vorbei, wir freuen uns auf euch!
-          </p>
+            vorbei, wir freuen uns auf euch!</p>
         </div>
-      </section>
-      <section class="secondSec" id="secondSec">
-        <table class="table" border="0">
-          <th colspan="2">
-            <h2><u>ÖFFNUNGSZEITEN</u></h2>
-          </th>
-          <br />
-          <tr>
-            <td>Montag</td>
-            <td>Geschlossen</td>
-          </tr>
-          <tr>
-            <td>Dienstag</td>
-            <td>17:00 - 21:00</td>
-          </tr>
-          <tr>
-            <td>Mittwoch</td>
-            <td>17:00 - 21:00</td>
-          </tr>
-          <tr>
-            <td>Donnerstag</td>
-            <td>17:00 - 21:00</td>
-          </tr>
-          <tr>
-            <td>Freitag</td>
-            <td>16:00 - 23:00</td>
-          </tr>
-          <tr>
-            <td>Samstag</td>
-            <td>16:00 - 23:00</td>
-          </tr>
-          <tr>
-            <td>Sonntag</td>
-            <td>17:00 - 22:00</td>
-          </tr>
-        </table>
-      </section>
-      <section class="thirdSec" id="thirdSec">
-        <div>
-          <iframe
-            class="pdfspeise"
-            src="/pdf/Speisekarte.pdf#toolbar=0&navpanes=0&scrollbar=0&"
-            id="pdfsp"
-            frameborder="0"
-          ></iframe>
+        <div></div>
+      </div>
+      <div class="secTwo">
+        <div class="speisekarte" id="speisekarte">
+            <button onclick="window.open('pdf/Speisekarte.pdf')">
+              <img src="/img/pizza-button.png" alt=""></button>
+          </div>
+        <table class="table" id="table" border="0">
+            <th colspan="2">
+              <h2>Öffnungszeiten</h2>
+            </th>
+           <br />
+            <tr>
+              <td>Montag</td>
+              <td>Geschlossen</td>
+            </tr>
+            <tr>
+              <td>Dienstag</td>
+              <td>17:00 - 21:00</td>
+            </tr>
+            <tr>
+              <td>Mittwoch</td>
+              <td>17:00 - 21:00</td>
+            </tr>
+            <tr>
+              <td>Donnerstag</td>
+              <td>17:00 - 21:00</td>
+            </tr>
+            <tr>
+              <td>Freitag</td>
+              <td>16:00 - 23:00</td>
+            </tr>
+            <tr>
+              <td>Samstag</td>
+              <td>16:00 - 23:00</td>
+            </tr>
+            <tr>
+              <td>Sonntag</td>
+              <td>17:00 - 22:00</td>
+            </tr>
+          </table>
+      </div>
+      <div class="secThree">
+        <div class="kontakt" id="kontakt">
+            <p><h3>Kontakt</h3><br>
+              Im Krausfeld 8<br>
+              53111 Bonn<br><br>
+              Telefon: 0228 / 123 456<br>
+            </p>
         </div>
-      </section>
-      <section class="forthSec" id="forthSec">
-        <div class="location" id="location">
-          einer großen Auswahl an italienischen Bieren, diversen Antipasti und
-          Aperitivi und zum Teil hausgemachtem Dessert liegt der Schwerpunkt auf
-          der original neapolitanischen Pizza. Die lange Teigführung von 72
-          Stunden macht sie nicht nur besonders bekömmlich sondern verleiht dem
-          Teig ein einzigartiges Aroma. Kommt vorbei, wir freuen uns auf euch!
-          hhohohohoihiohoiho-ihoihoihoihiohiohiohoihoii >
+        <div class="maps">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1262.4499076674515!2d7.092153!3d50.740347!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bee1a4b0958727%3A0x312454b87f48c965!2sAntica%20Pizzeria%20Nennillo%20-%20Bonn!5e0!3m2!1sde!2sde!4v1763226192381!5m2!1sde!2sde" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-      </section>
+      </div>
     </main>
+    <footer>
+      <section class="footer">
+        <div class="footerLinks">
+          <a href="/impressum.html">Impressum</a>
+          <a href="/datenschutz.html">Datenschutzerklärung</a>
+          <a href="https://www.youtube.com/watch?v=hPr-Yc92qaY" target="_blank">Jobs</a>
+        </div>
+        <div>
+          <p>© 2025 BeateBeispiel.de</p>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
