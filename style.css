@@ -176,6 +176,7 @@ a:hover {
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .speisekarte button img {
