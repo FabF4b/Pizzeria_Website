@@ -157,7 +157,7 @@ a:hover {
   gap: 3rem;
   padding: 2%;
   align-items: center;
-  background-image: url(/img/restaurant3.jpg);
+  background-image: url(img/restaurant3.jpg);
   background-blend-mode: multiply;
   background-color: rgb(0, 0, 0, 0.6);
   background-position: center;
