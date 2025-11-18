@@ -13,25 +13,26 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="header">
-      <div class="navbar">
-        <a href="#about">Über uns</a>
-        <a href="#table">Öffnungszeiten</a>
-        <a href="pdf/Speisekarte.pdf" target="_blank">Speisekarte</a>
-        <a href="#kontakt">Kontakt</a>
-      </div>
-      <div class="videoContainer">
+    <header class="header-container">
+      <nav class="navbar">
+        <a href="#about" class="navbar-links" >Über uns</a>
+        <a href="#table" class="navbar-links" >Öffnungszeiten</a>
+        <a href="pdf/Speisekarte.pdf" target="_blank" class="navbar-links" >Speisekarte</a>
+        <a href="#contact" class="navbar-links" >Kontakt</a>
+      </nav>
+      <div class="backgroundvid">
         <video autoplay loop muted playsinline preload="auto" src="video/backgroundvid.mp4"></video>
       </div>
-      <div class="textOverlay">
-        <h1>Pizzeria<br />Nennillo Bonn</h1>
-        <h4>Pizza Napoletana • Wein • Altstadt</h4>
-      </div>
+      <div class="header-overlay">
+        <h1 class="hero-heading" >Pizzeria<br />Nennillo Bonn</h1>
+        <h4 class="hero-sub" >Pizza Napoletana • Wein • Altstadt</h4>
+        <a href="" class="calltoAction">Tisch reservierung</a>
+      </header>
     <main>
-      <div class="secOne">
+      <section class="about-container">
         <div class="about" id="about">
-          <h2>Nennillo Bonn</h2><br />
-            <p><i
+          <h2 class="heading">Nennillo Bonn</h2><br />
+            <p class="subtitle"><i
               >„Das Backen einer original neapolitanischen Pizza dauert ca. 60
               Sekunden“</i
             >, sagt James Amatulli, Inhaber der Antica Pizzeria Nennillo. In der
@@ -47,18 +48,25 @@
             original neapolitanischen Pizza.<br /><br />
             Die lange Teigführung von 72 Stunden macht sie nicht nur besonders
             bekömmlich sondern verleiht dem Teig ein einzigartiges Aroma. Kommt
-            vorbei, wir freuen uns auf euch!</p>
+            vorbei, wir freuen uns auf euch!
+            </p>
         </div>
-        <div></div>
-      </div>
-      <div class="secTwo">
-        <div class="speisekarte" id="speisekarte">
+        <div class="about-image-container">
+          <img src="./img/restaurant4.jpg" alt="Drei Pizza Lecker" class="about-image about-image-large">
+          <div class="about-image-small">
+            <img src="./img/restaurant2.jpg" alt="Pizza Innenbereich" class="about-image">
+          <img src="./img/pizzaofen.jpg" alt="Pizza Innenbereich 2" class="about-image">
+          </div>
+        </div>
+      </section>
+      <section class="timetable-container">
+        <div class="menu" id="menu">
             <button onclick="window.open('pdf/Speisekarte.pdf')">
               <img src="img/pizza-button.png" alt=""></button>
           </div>
         <table class="table" id="table" border="0">
-            <th colspan="2">
-              <h2>Öffnungszeiten</h2>
+            <th  colspan="2">
+              <h2 class="heading">Öffnungszeiten</h2>
             </th>
            <br />
             <tr>
@@ -90,23 +98,22 @@
               <td>17:00 - 22:00</td>
             </tr>
           </table>
-      </div>
-      <div class="secThree">
-        <div class="kontakt" id="kontakt">
-            <h3>Kontakt</h3><br>
-            <p>Im Krausfeld 8<br>
+      </section>
+      <section class="contact-container">
+        <div class="contact" id="contact">
+            <h2 class="heading">Kontakt</h2><br>
+            <p class="subtitle">Im Krausfeld 8<br>
               53111 Bonn<br><br>
               Telefon: 0228 / 123 456<br>
             </p>
         </div>
         <div class="maps">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1262.4499076674515!2d7.092153!3d50.740347!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bee1a4b0958727%3A0x312454b87f48c965!2sAntica%20Pizzeria%20Nennillo%20-%20Bonn!5e0!3m2!1sde!2sde!4v1763226192381!5m2!1sde!2sde" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1262.4499076674515!2d7.092153!3d50.740347!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bee1a4b0958727%3A0x312454b87f48c965!2sAntica%20Pizzeria%20Nennillo%20-%20Bonn!5e0!3m2!1sde!2sde!4v1763226192381!5m2!1sde!2sde" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-      </div>
+      </section>
     </main>
-    <footer>
-      <section class="footer">
-        <div class="footerLinks">
+    <footer class="footer">
+        <div class="footer-links">
           <a href="impressum.html">Impressum</a>
           <a href="datenschutz.html">Datenschutzerklärung</a>
           <a href="https://www.youtube.com/watch?v=hPr-Yc92qaY" target="_blank">Jobs</a>
@@ -114,7 +121,6 @@
         <div>
           <p>© 2025 BeateBeispiel.de</p>
         </div>
-      </section>
     </footer>
   </body>
 </html>
