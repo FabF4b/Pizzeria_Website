@@ -1,0 +1,77 @@
+@media only screen and (min-width: 504px) {
+  html {
+    font-size: 70%;
+  }
+
+  .navbar {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+
+  .navbar {
+    padding: 2rem;
+  }
+
+  .hero-heading {
+    font-size: 5rem;
+  }
+
+  .about-container {
+    margin: 5rem;
+  }
+
+  .contact-container {
+    margin: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 90%;
+  }
+
+  .navbar {
+    padding: 2rem;
+  }
+
+  .hero-heading {
+    font-size: 5rem;
+  }
+
+  .about-container {
+    margin: 5rem;
+  }
+
+  .timetable-container {
+    justify-content: space-evenly;
+    padding: 3rem 6rem;
+  }
+
+  .contact-container {
+    margin: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  html {
+    font-size: 100%;
+  }
+
+  .hero-heading {
+    font-size: 5.5rem;
+  }
+
+  .about-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .about {
+    max-width: fit-content;
+  }
+}
